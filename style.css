@@ -307,6 +307,13 @@ footer p:nth-child(2)
 
 @media(max-width:750px)
 {
+    .logo
+    {       
+        font-size: 22px;
+        width: 100%;
+        margin-left:0px;
+        text-align: center;
+    }
     section{
         background-image: none;
         background-color: #f7f7f7;
