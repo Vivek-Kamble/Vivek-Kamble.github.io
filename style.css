@@ -124,7 +124,7 @@ button:active{
     /* border: 2px solid black;
     border-radius: 50px; */
 }
-.about-container
+.about-container,.project
 {
     width: 80%;
     height: 330px;
@@ -303,8 +303,50 @@ footer p:nth-child(2)
     color: #2b2b2b;
     font-size: 20px;
 }
-
-
+.projects
+{
+    width: 100%;
+    background-color: #e6e6e6;
+    overflow: hidden;
+    height: 700px;    
+}
+.projects p{
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #191919;
+    line-height:5px;
+    text-align: center;
+    font-family: robotolight;
+}
+/* .project with about me */
+.project{
+    /* position: relative; */
+    margin-top: 30px;
+    height: 255px;
+   
+} 
+.project .item
+{
+    width: 30%;
+    margin-left: 2.5%;
+    margin-top: 40px;
+    height: 162.36px;
+    /* display: flex; */
+    display: inline-block;
+    border:1px solid #cbcbcb;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    /* background-color: aqua; */
+}
+.project .item:hover img{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.item img{
+    height: 162.35px;
+    width: 100%;
+}
 @media(max-width:750px)
 {
     .logo

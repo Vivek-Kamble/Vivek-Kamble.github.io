@@ -64,6 +64,36 @@
             <button onclick="window.open('https://github.com/Vivek-Kamble/Vivek-Kamble.github.io/raw/master/vivekResume/VivekKambleResume.pdf')">Download CV</button>
         </div>
     </div>
+    <div class="projects">
+        <p>Few projects</p>
+        <div class="project">
+            <span style="height: 20px;overflow: hidden;position: absolute;color: #3e3e3d;
+            font-size: 13px;
+            font-family: roboto;left: 40%;margin-top: 10px;">Webpages using pure HTML & CSS</span>
+            <div class="item" onclick="project(1)">
+                <img src="./projects/templates/gym.png" alt="">
+            </div>
+            <div class="item" onclick="project(2)">
+                <img src="./projects/templates/solitaire.png" alt="">
+            </div>
+            <div class="item" onclick="project(3)">
+                <img src="./projects/templates/cafe.png" alt="">
+            </div>
+            
+        </div>
+        <div class="project">
+            <span style="height: 20px;overflow: hidden;position: absolute;color: #3e3e3d;
+            font-size: 13px;
+            font-family: roboto;left: 40%;margin-top: 10px;">Working webpage using JavaScript</span>
+            <div class="item" style="margin-left: 35%;" onclick="project(4)">
+                <img src="./projects/templates/mini-cart.png" alt="" style="width: 324.235px;">
+            </div>
+        </div>
+        <p style="font-size: 30px;
+        font-family: robotolight;
+        font-weight: bold;
+        text-decoration: underline;padding: 10px;">More Projects will be updated soon...</p>
+    </div>
     <div class="contact-me">
         <p>If You Have Any Project In Your Mind.</p>
         <button>Contact Me </button>
@@ -99,6 +129,21 @@
                  $('nav').toggleClass('active');                                 
              })            
          })
+         function project(item)
+         {
+             switch(item)
+             {
+                 case 1 : window.location.href ="./projects/gym/index.html";
+                 break;
+                 case 2 : window.location.href ="./projects/solitaire/index.html";
+                 break;
+                 case 3 : window.location.href ="./projects/cafe/restaurant.html";
+                 break;
+                 case 4 : window.location.href ="./projects/mini-cart/ecommerce.html";
+                 break;
+             }
+             
+         }
      </script>
 </body>
 </html>
